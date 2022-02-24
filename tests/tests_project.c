@@ -73,7 +73,7 @@ Test(take_var, take_all_var)
 
 Test(nb_arg_env, take_max_env)
 {
-    int nb = nb_arg_env(env);
+    int nb = nb_arg_env(env, NULL, 0);
 
     cr_assert_eq(nb, 7);
 }

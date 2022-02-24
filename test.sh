@@ -1,5 +1,6 @@
 #!/bin/bash
 
+make
 fuschia='\e[0;35m'
 normal='\e[0;m'
 
@@ -12,7 +13,7 @@ function tests()
 { 
     echo -e "$1\n$2\n$3\n$4" | ./mysh > temp.txt 2>&1
     echo -e "$1\n$2\n$3\n$4" | tcsh > temp2.txt 2>&1
-    diff -I 'SHLVL=' -I '_=' temp.txt temp2.txt -s
+    diff -I 'SHLVL=' -I '_=' -I 'temp.txt' -I 'temp2.txt' temp.txt temp2.txt -s
 }
 
 #basic command

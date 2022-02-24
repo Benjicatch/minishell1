@@ -20,7 +20,6 @@ SRC_MAIN	=	main.c
 SRC_TESTS	=	tests/tests_project.c				\
 				tests/tests_exit.c					\
 				tests/tests_env.c					\
-				tests/tests_cd.c
 
 OBJ		=	$(SRC_MAIN:.c=.o)					\
 			$(SRC:.c=.o)
